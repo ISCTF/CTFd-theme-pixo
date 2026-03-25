@@ -24,15 +24,7 @@ export default defineConfig({
               dest: "static/webfonts",
             },
             {
-              src: "./node_modules/@fontsource/lato/files/**/*400*-normal*",
-              dest: "static/webfonts",
-            },
-            {
-              src: "./node_modules/@fontsource/lato/files/**/*700*-normal*",
-              dest: "static/webfonts",
-            },
-            {
-              src: "./node_modules/@fontsource/raleway/files/**/*400*-normal*",
+              src: "./assets/webfonts/**",
               dest: "static/webfonts",
             },
             {

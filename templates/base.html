@@ -35,6 +35,16 @@
   </script>
 
   {{ Configs.theme_header }}
+  <style>
+  @font-face {
+    font-family: "Unifont";
+    src: url("{{ url_for('views.themes', path='webfonts/unifont.woff2') }}") format("woff2"),
+         url("{{ url_for('views.themes', path='webfonts/unifont.woff') }}") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
 </head>
 <body>
 {% include "components/navbar.html" %}
