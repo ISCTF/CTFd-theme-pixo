@@ -180,3 +180,16 @@ main:before {
       bottom: 0
   }
 }
+
+.category-header h3:before {
+  content: ' ';
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background: url(../img/arrow2.png) no-repeat;
+  background-size: contain
+}
+
+.category-header h3 {
+  text-transform: uppercase
+}

@@ -21,3 +21,23 @@
     }
   }
 }
+
+.challenge-button span:before {
+  background-image: url(../img/coin.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  margin: 0 4px -3px 0
+}
+
+.challenge-value:before {
+  background-image: url(../img/coin.png);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  margin: 0 -5px -5px 0
+}
