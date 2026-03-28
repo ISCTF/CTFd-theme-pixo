@@ -3,21 +3,35 @@
 
 .challenge-desc {
   overflow-wrap: anywhere;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
 
   img {
     max-width: 100%;
+    height: auto;
   }
 }
 
 .challenge-button {
   border: none;
-  box-shadow: 0 0 15px var(--bs-secondary);
+  box-shadow: 3px 3px #3312d5 !important;
+  background-color: #2378c0 !important;
+  border-color: #2378c0 !important;
+
+  &:hover {
+    background-color: #ff0e66 !important;
+    border-color: #8f0034 !important;
+  }
 
   &.challenge-solved {
-    background-color: #29c830;
+    background-color: #01c569 !important;
+    opacity: .8;
+    border: none;
 
     &:hover {
-      background-color: #37d63e;
+      background-color: #ff0e66 !important;
+      border-color: #8f0034 !important;
     }
   }
 }
@@ -40,4 +54,34 @@
   content: '';
   background-size: cover;
   margin: 0 -5px -5px 0
+}
+
+.corner-button-check {
+    margin-top: -10px;
+    margin-right: 25px;
+    position: absolute;
+    right: 0
+}
+
+.challenge-submit {
+  background: #ff0e66 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, .5);
+  border: 0 !important;
+}
+
+.challenge-submit:active {
+  transform: scale(.9);
+  opacity: .9
+}
+
+.challenge-tag {
+  background-color: #2492ef !important;
+  text-transform: uppercase
+}
+
+.challenge-name {
+  color: #ff0e66;
+  text-shadow: unset;
+  font-size: 1rem
 }

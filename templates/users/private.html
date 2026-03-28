@@ -6,42 +6,42 @@
       <h1>{{ user.name }}</h1>
 
       {% if user.team_id %}
-        <h2>
+        <div>
           <a href="{{ url_for('teams.public', team_id=user.team_id) }}">
-						<span class="badge bg-secondary">
+						<span class="pbadge pbg-secondary">
 							{{ user.team.name }}
 						</span>
           </a>
-        </h2>
+        </div>
       {% endif %}
 
       <div class="pt-2">
         {% if user.oauth_id %}
           <a href="https://majorleaguecyber.org/u/{{ user.name }}">
-            <h3 class="d-inline-block mx-1"><span class="badge rounded-pill bg-primary">{% trans %}Official{% endtrans %}</span></h3>
+            <div class="d-inline-block mx-1"><span class="pbadge rounded-pill pbg-primary">{% trans %}Official{% endtrans %}</span></div>
           </a>
         {% endif %}
 
         {% if user.affiliation %}
-          <h3 class="d-inline-block mx-1">
-            <span class="badge rounded-pill bg-primary">{{ user.affiliation }}</span>
-          </h3>
+          <div class="d-inline-block mx-1">
+            <span class="pbadge rounded-pill pbg-primary">{{ user.affiliation }}</span>
+          </div>
         {% endif %}
 
         {% if user.country %}
-          <h3 class="d-inline-block mx-1">
-            <span class="badge rounded-pill bg-primary">
+          <div class="d-inline-block mx-1">
+            <span class="pbadge rounded-pill pbg-primary">
                 <i class="flag-{{ user.country.lower() }}"></i>
                 {{ lookup_country_code(user.country) }}
             </span>
-          </h3>
+          </div>
         {% endif %}
       </div>
 
       {% if user.bracket_id %}
         <div class="pt-2">
           <h2>
-            <span class="badge text-bg-light">
+            <span class="pbadge text-bg-light">
               {{ user.bracket.name }}
             </span>
           </h2>

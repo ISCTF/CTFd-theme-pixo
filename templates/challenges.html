@@ -52,7 +52,7 @@
                           ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`),
                         ];"
                         :value="c.id" @click="loadChallenge(c.id)"
-                    >
+                    ><i x-show="c.solved_by_me" class="fas fa-check corner-button-check"></i>
 
                       <div class="challenge-inner my-3">
                         <p x-text="c.name"></p>
